@@ -12,3 +12,5 @@
 
 # Accessibility:
 - ### voice recognition 
+
+### Deployed on GitHub Pages [here](https://pjsalter.github.io/Wordle-Word-Game) ✨
