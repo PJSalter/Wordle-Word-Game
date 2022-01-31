@@ -1,0 +1,8 @@
+/* ------------------- Styling to the wordle board grid will be contained here --------------------*/
+
+/* beginning stylying dimentions for grid size for the wordle board */
+#word-grid{
+    background-color:aquamarine;
+    width: 21.875rem;
+    height: 26.25rem;
+}
