@@ -1,8 +1,24 @@
 /* ------------------- Styling to the wordle board grid will be contained here --------------------*/
 
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+/* title styling to the game */
+#wordle-Name{
+   font-size: 2.25rem;
+   font-weight: bold;
+   letter-spacing: 0.125rem;
+}
 /* beginning stylying dimentions for grid size for the wordle board */
 #word-grid{
     background-color:aquamarine;
     width: 21.875rem;
     height: 26.25rem;
+    /* now to center the game board */
+    margin: 0 auto;
+    margin-top: 0.188rem;
+    /* keeping the tile elements within that board with flex */
+    display: flex;
+    flex-wrap: wrap;
 }
