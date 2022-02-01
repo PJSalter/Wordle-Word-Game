@@ -4,6 +4,10 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+/* horizontal rule styling */
+hr{
+   width: 31.25rem;
+}
 /* title styling to the game */
 #wordle-Name{
    font-size: 2.25rem;
