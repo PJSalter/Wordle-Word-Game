@@ -29,7 +29,10 @@
 - ### return function to start again.
 
 # Accessibility:
+
 - ### There is a color blind mode and dark mode within the settings (correct contrast ratio for colours).
 - ### mobile touch screen recognisable.
 - ### screen reader for visisally impaired users.
 - ### page scroll up and down with keyboard.
+
+### Deployed on GitHub Pages [here](https://pjsalter.github.io/Wordle-Word-Game) ✨
