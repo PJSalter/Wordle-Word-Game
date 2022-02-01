@@ -22,3 +22,16 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+/* creating styling for each and every square tile which will be held within the game board */
+
+.square{
+     /* box */
+     border: 0.125rem solid lightgray;
+     width: 3.75rem;
+     height: 3.75rem;
+     /* space gap between each square tile */
+     margin: 0.156rem;
+
+     /* text styling for each letter that will be typed by the user's choice */
+}
