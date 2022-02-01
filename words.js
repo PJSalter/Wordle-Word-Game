@@ -2,15 +2,15 @@
 let heightInner = 6; // this will initiate the number of tries the user has.
 let lengthOfWord = 5; //this will initiate the length of the word, the user can only spell out 5 letters each word.
 
-// JavaScript to create the game board
-
 //allows the function to load
 
 window.onload = function(){
-    initialize();
+    initializeGameBoard();
 }
 
-function initialize(){
+// JavaScript to create the game board
+
+function initializeGameBoard(){
 
     //making the board
     for (let i = 0; i < heightInner; i++){
