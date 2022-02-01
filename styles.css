@@ -1,8 +1,49 @@
 /* ------------------- Styling to the wordle board grid will be contained here --------------------*/
 
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+/* horizontal rule styling */
+hr{
+   width: 31.25rem;
+}
+/* title styling to the game */
+#wordle-Name{
+   font-size: 2.25rem;
+   font-weight: bold;
+   letter-spacing: 0.125rem;
+}
 /* beginning stylying dimentions for grid size for the wordle board */
 #word-grid{
     background-color:aquamarine;
     width: 21.875rem;
     height: 26.25rem;
+    /* now to center the game board */
+    margin: 0 auto;
+    margin-top: 0.188rem;
+    /* keeping the tile elements within that board with flex */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* creating styling for each and every square tile which will be held within the game board */
+
+.square{
+     /* box */
+     border: 0.125rem solid lightgray;
+     width: 3.75rem;
+     height: 3.75rem;
+     /* space gap between each square tile */
+     margin: 0.156rem;
+
+     /* text styling for each letter that will be typed by the user's choice */
+     color:black;
+     /* font size will be the same as the title */
+     font-size: 2.25rem;
+     font-weight: bold;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
 }
