@@ -8,6 +8,7 @@
 - #### a flex layout centred for responsiveness.
 - #### these squares will have diameters to fit each letter typed by user.
 - #### five columns and six rows.
+- #### each square tile will have a grey boarder identifying each individual square.
 
 ## User Story
 
