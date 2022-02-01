@@ -34,4 +34,12 @@
      margin: 0.156rem;
 
      /* text styling for each letter that will be typed by the user's choice */
+     color:black;
+     /* font size will be the same as the title */
+     font-size: 2.25rem;
+     font-weight: bold;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
 }
