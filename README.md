@@ -35,4 +35,4 @@
 - ### screen reader for visisally impaired users.
 - ### page scroll up and down with keyboard.
 
-### Deployed on GitHub Pages [here](https://pjsalter.github.io/Wordle-Word-Game) ✨
+### Presented on GitHub Pages [here](https://pjsalter.github.io/Wordle-Word-Game) ✨
