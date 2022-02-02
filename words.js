@@ -12,6 +12,7 @@ function backToGame() {
 document.querySelector("#wordle-Name").style.display = "flex";
 document.querySelector("#word-grid").style.display = "flex";
 document.querySelector(".tab").style.display = "flex";
+document.querySelector(".line").style.display = "flex";
 document.querySelector("#overlay").style.display = "none";
 }
 
