@@ -6,7 +6,13 @@ document.querySelector("#word-grid").style.display = "none";
 document.querySelector(".tab").style.display = "none";
 };
 
-
+// once user clicks the cross from settings page then returns back to game.
+function backToGame() {
+document.querySelector("#wordle-Name").style.display = "flex";
+document.querySelector("#word-grid").style.display = "flex";
+document.querySelector(".tab").style.display = "flex";
+document.querySelector("#overlay").style.display = "none";
+}
 
 
 
