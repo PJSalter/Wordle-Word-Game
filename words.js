@@ -1,3 +1,22 @@
+// settings page to appear once cogg is clicked.
+function settings() {
+document.querySelector("#overlay").style.display = "block"
+document.querySelector("#wordle-Name").style.display = "none";
+document.querySelector(".line").style.display = "none";
+document.querySelector("#word-grid").style.display = "none";
+document.querySelector(".tab").style.display = "none";
+};
+
+// once user clicks the cross from settings page then returns back to game.
+function backToGame() {
+document.querySelector("#wordle-Name").style.display = "flex";
+document.querySelector("#word-grid").style.display = "flex";
+document.querySelector(".tab").style.display = "flex";
+document.querySelector(".line").style.display = "flex";
+document.querySelector("#overlay").style.display = "none";
+}
+
+
 
 let heightInner = 6; // this will initiate the number of tries the user has.
 let lengthOfWord = 5; //this will initiate the length of the word, the user can only spell out 5 letters each word.
