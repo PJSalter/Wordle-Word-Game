@@ -6,13 +6,33 @@
 }
 /* horizontal rule styling */
 hr{
-   width: 31.25rem;
+    width: 22rem;
 }
+/* styling header with flex to have settings button next to title */
+header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 18%;
+    gap: 10%;
+}
+
 /* title styling to the game */
 #wordle-Name{
    font-size: 2.25rem;
    font-weight: bold;
    letter-spacing: 0.125rem;
+}
+i, .tab {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 1.25rem;
+    padding-right: 2rem;
+}
+
+i.fas fa-cog{
+    content: 'f013';
 }
 /* beginning stylying dimentions for grid size for the wordle board */
 #word-grid{
