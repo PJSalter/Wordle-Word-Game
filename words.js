@@ -2,6 +2,7 @@
 function settings() {
 document.querySelector("#overlay").style.display = "block"
 document.querySelector("#wordle-Name").style.display = "none";
+document.querySelector(".line").style.display = "none";
 document.querySelector("#word-grid").style.display = "none";
 document.querySelector(".tab").style.display = "none";
 };
