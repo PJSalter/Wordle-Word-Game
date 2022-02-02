@@ -5,7 +5,7 @@
     text-align: center;
 }
 /* horizontal rule styling */
-hr{
+.line{
     width: 22rem;
 }
 /* styling header with flex to have settings button next to title */
@@ -85,12 +85,25 @@ i.fas fa-times{
 }
 .settings-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 2rem;
     align-items: center;
     position: relative;
 }
 #settings-title{
-   font-size: 1rem;
+   font-size: 16px;
    font-weight: bold;
    letter-spacing: 0.125rem;
+}
+.clickTheCross{
+    background: none;
+    border: none;
+    cursor: pointer;
+    /* margin-top: 1.25rem; */
+    /* padding-right: 2rem; */
+    color: darkgray;
+}
+#setStyle{
+    margin-top: 0;
+    padding-right: 0;
 }
