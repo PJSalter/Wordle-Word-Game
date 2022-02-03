@@ -87,7 +87,6 @@ i.fas fa-times{
 .settings-container{
     display: flex;
     justify-content: space-between;
-    /* padding: 2rem; */
     margin-left: auto;
     margin-right: auto;
     max-width: 40rem;
