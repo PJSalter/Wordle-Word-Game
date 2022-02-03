@@ -22,7 +22,7 @@ let heightInner = 6; // this will initiate the number of tries the user has.
 let lengthOfWord = 5; //this will initiate the length of the word, the user can only spell out 5 letters each word.
 
 //allows the function to load
-
+// this calls the function
 window.onload = function(){
     initializeGameBoard();
 }
@@ -34,12 +34,17 @@ function initializeGameBoard(){
     //making the board
     for (let i = 0; i < heightInner; i++){
         for (let j = 0; j < lengthOfWord; j++){
+            // now to create a new html element.
             // example - <span id="0-0" class="tile">p</span>
             let squareTile = document.createElement("span");
+            //modifying the fields.
+            // example the id will represent as id=0-0, 0-3, 1-2 and further.
             squareTile.id = i.toString() + "-" + j.toString();
+            //this will add the class styling from square within my css.
             squareTile.classList.add("square")
-            // placeholder letter p
+            // placeholder letter p which visually be identified within each square as a letter centered to see how a letter will look once typed by the user.
             squareTile.innerText = "p";
+            // picking up the id and then appending the child attribute which inserts the html tag inside the section tag.
             document.getElementById("word-grid").appendChild(squareTile);
         }
     }
