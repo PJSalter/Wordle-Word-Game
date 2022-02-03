@@ -10,6 +10,8 @@
 - #### five columns and six rows.
 - #### each square tile will have a grey boarder identifying each individual square.
 
+### Addressed a second feature where user may interact with an icon to enter settings section, user may enter back to the game once clicking the x icon to exit settings.
+
 ## User Story
 
 - ### A daily game that has a new word each day.
