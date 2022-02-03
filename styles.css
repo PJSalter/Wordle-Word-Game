@@ -41,7 +41,7 @@ i.fas fa-times{
 }
 /* beginning stylying dimentions for grid size for the wordle board */
 #word-grid{
-    background-color:aquamarine;
+    /*background-color:aquamarine; */
     width: 21.875rem;
     height: 26.25rem;
     /* now to center the game board */
@@ -56,7 +56,7 @@ i.fas fa-times{
 
 .square{
      /* box */
-     border: 0.125rem solid lightgray;
+     border: 0.125rem solid darkgray;
      width: 3.75rem;
      height: 3.75rem;
      /* space gap between each square tile */
