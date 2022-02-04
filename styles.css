@@ -4,6 +4,13 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+/* root color's that are being used for the whole take home project */
+:root{
+    /* original colors */
+    --background-clr: #FFFFFF;
+    --primary-clr: darkgrey;
+    --text-clr:#000000;
+  }
 /* horizontal rule styling */
 .line{
     width: 22rem;
@@ -30,7 +37,7 @@ i, .tab {
     cursor: pointer;
     margin-top: 1.25rem;
     padding-right: 2rem;
-    color: darkgray;
+    color: var(--primary-clr);
 }
 
 i.fas fa-cog{
@@ -56,14 +63,14 @@ i.fas fa-times{
 
 .square{
      /* box */
-     border: 0.125rem solid darkgray;
+     border: 0.125rem solid var(--primary-clr);
      width: 3.75rem;
      height: 3.75rem;
      /* space gap between each square tile */
      margin: 0.156rem;
 
      /* text styling for each letter that will be typed by the user's choice */
-     color:black;
+     color: var(--text-clr);
      /* font size will be the same as the title */
      font-size: 2.25rem;
      font-weight: bold;
@@ -106,12 +113,26 @@ i.fas fa-times{
     cursor: pointer;
     /* margin-top: 1.25rem; */
     /* padding-right: 2rem; */
-    color: darkgray;
+    color: var(--primary-clr);
 }
 #setStyle{
     margin-top: 0;
     padding-right: 0;
 }
+
+/* dark mode colors class once toggle functions as a switch*/
+.dark-mode{
+    --background-clr: #000000;
+    --primary-clr: lightgrey;
+    --text-clr:#FFFFFF;
+  }
+  /* dark mode container styling */
+  .darkMode-wrapper{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    margin-bottom:1em;
+    }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
     .settings-container{
