@@ -14,20 +14,8 @@ document.querySelector("#word-grid").style.display = "flex";
 document.querySelector(".tab").style.display = "flex";
 document.querySelector(".line").style.display = "flex";
 document.querySelector("#overlay").style.display = "none";
+document.querySelector("#darkMode-wrapper").style.display = "none";
 }
-
-//......... dark mode toggle for settings page .............. //
-
-//creating a variable that will reference the input type of checkbox from its id attribute.
-const modeSwitch = document.getElementById("dark-mode-switch");
-
-//creating an event Listener to see when the toggle is clicked on.
-// it will be looking for a click.
-// I will then want it to check it's own status to know if its on or off.
-// I am writing a function for this called identifyMode.
-modeSwitch.addEventListener('click', identifyMode);
-
-
 
 let heightInner = 6; // this will initiate the number of tries the user has.
 let lengthOfWord = 5; //this will initiate the length of the word, the user can only spell out 5 letters each word.
@@ -60,3 +48,14 @@ function initializeGameBoard(){
         }
     }
 }
+
+//......... dark mode toggle for settings page .............. //
+
+//creating a variable that will reference the input type of checkbox from its id attribute.
+const modeSwitch = document.getElementById("dark-mode-switch");
+
+//creating an event Listener to see when the toggle is clicked on.
+// it will be looking for a click.
+// I will then want it to check it's own status to know if its on or off.
+// I am writing a function for this called identifyMode.
+modeSwitch.addEventListener('click', identifyMode);
