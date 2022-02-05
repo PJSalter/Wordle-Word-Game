@@ -81,3 +81,7 @@ function identifyMode(){
       lightModeSwitchedBack();
     }
   }
+  // adding the dark mode class attribute styling.
+  function switchToDarkMode(){
+    document.body.classList.add("dark-mode")
+  }
