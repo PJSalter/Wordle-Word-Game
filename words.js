@@ -59,3 +59,34 @@ const modeSwitch = document.getElementById("dark-mode-switch");
 // I will then want it to check it's own status to know if its on or off.
 // I am writing a function for this called identifyMode.
 modeSwitch.addEventListener('click', identifyMode);
+
+// ............. IdentifyMode Function ................//
+
+// I want to check what state the check box is in.
+//if it is checked then I want to enable a dark mode.
+//if it isn't checked then I want to remove it from the dark mode.
+
+function identifyMode(){
+    //once clicking on the checkbox then the message will appear in the console.
+    //console.log('checking...... approved for identifying the click');
+  
+    //after i want to check the state of this input so that when click it will turn on the dark mode and when it is off i will then remove the dark mode class.
+    if(modeSwitch.checked){
+      //checks dark mode on
+      //console.log('dark mode on');
+      switchToDarkMode();
+    } else {
+      //checks dark mode off
+      //console.log('dark mode off')
+      lightModeSwitchedBack();
+    }
+  }
+  // adding the dark mode class attribute styling.
+  function switchToDarkMode(){
+    document.body.classList.add("dark-mode");
+  }
+
+  // function to switch back to original light mode.
+  function lightModeSwitchedBack(){
+    document.body.classList.remove("dark-mode");
+  }

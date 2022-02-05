@@ -12,6 +12,10 @@
     --text-clr:#000000;
   }
 /* horizontal rule styling */
+body{
+    background-color: var(--background-clr);
+    color: var(--text-clr);
+}
 .line{
     width: 22rem;
 }
