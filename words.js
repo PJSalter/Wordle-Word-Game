@@ -68,16 +68,16 @@ modeSwitch.addEventListener('click', identifyMode);
 
 function identifyMode(){
     //once clicking on the checkbox then the message will appear in the console.
-    console.log('checking...... approved for identifying the click');
+    //console.log('checking...... approved for identifying the click');
   
     //after i want to check the state of this input so that when click it will turn on the dark mode and when it is off i will then remove the dark mode class.
     if(modeSwitch.checked){
       //checks dark mode on
-      console.log('dark mode on');
+      //console.log('dark mode on');
       switchToDarkMode();
     } else {
       //checks dark mode off
-      console.log('dark mode off')
+      //console.log('dark mode off')
       lightModeSwitchedBack();
     }
   }
