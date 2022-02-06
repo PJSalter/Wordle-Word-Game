@@ -168,6 +168,12 @@ i.fas fa-times{
 #dark-mode-switch:checked ~ label .light-dark-toggle{
     transform: translateX(2em);
 }
+#dark-mode-switch:checked ~ .mode-switch::before{
+    content: 'Dark Mode On';
+}
+#dark-mode-switch{
+    display:none;
+}
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
     .settings-container{
