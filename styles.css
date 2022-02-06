@@ -129,14 +129,23 @@ i.fas fa-times{
     --background-clr: #000000;
     --primary-clr: lightgrey;
     --text-clr:#FFFFFF;
-  }
+}
   /* dark mode container styling */
-  .darkMode-wrapper{
+.darkMode-wrapper{
     display: flex;
     justify-content:flex-end;
     align-items: center;
     margin-bottom:1em;
-    }
+}
+.mode-switch{
+    width:4em;
+    height:2em;
+    border-radius:10em;
+    background-color:var(--background-clr);
+    border: 2px solid var(--primary-clr);
+    position:absolute;
+    cursor: pointer;
+}
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
     .settings-container{
