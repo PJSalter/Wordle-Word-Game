@@ -157,6 +157,17 @@ i.fas fa-times{
     cursor: pointer;
     transition: all 250ms ease-in-out;
 }
+.mode-switch::before{
+    content:"Light Mode Activated";
+    position:absolute;
+    display:inline-block;
+    width:12em;
+    left: -8em;
+    top:0.4em;
+}
+#dark-mode-switch:checked ~ label .light-dark-toggle{
+    transform: translateX(2em);
+}
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
     .settings-container{
