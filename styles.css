@@ -146,6 +146,17 @@ i.fas fa-times{
     position:absolute;
     cursor: pointer;
 }
+.light-dark-toggle{
+    width:1.6em;
+    height:1.6em;
+    background-color: var(--primary-clr);
+    position:absolute;
+    border-radius: 10em;
+    top:0.2em;
+    left:0.2em;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
     .settings-container{
