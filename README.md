@@ -4,20 +4,22 @@
 
 ### Assigning an issue to this Repository that identifies the feature I am creating from the User story. 
 
-### I will implement issue #1 Create a grid layout - this will include:
-- #### a flex layout centred for responsiveness.
-- #### these squares will have diameters to fit each letter typed by user.
-- #### five columns and six rows.
-- #### each square tile will have a grey boarder identifying each individual square.
+#### 1. I will implement issue #1 Create a grid layout - this will include:
+- ##### a flex layout centred for responsiveness.
+- ##### these squares will have diameters to fit each letter typed by user.
+- ##### five columns and six rows.
+- ##### each square tile will have a grey boarder identifying each individual square.
 
-### Addressed a second feature where user may interact with an icon to enter settings section, user may enter back to the game once clicking the x icon to exit settings.
+#### 2. Addressed a second feature where user may interact with an icon to enter settings section, user may enter back to the game once clicking the x icon to exit settings.
+
+#### 3. Created Toggle button for user to interact as a feature that is included within the settings section. This is part of a User Story and accessibility option for user to modify look of page for better visibility.
 
 ## User Story
 
 - ### A daily game that has a new word each day.
 - ### User will have six attempts from a five letter word to guess what this word is
 - ### Every time you guess a word incorrect the user will get some hints.
-- ### Contains settings for hard mode
+- ### Contains settings for hard mode and dark mode alteration.
 - ### yellow tiled colour letters guessed mean the letter exsists in the word but it's not in the correct position.
 - ### if the letter is green tiled then this means it's the correct position.
 - ### grey tiled means that the letter isn't even displayed within the word at all.
