@@ -176,58 +176,23 @@ i.fas fa-times{
     font-size: 1.625rem;
     padding: 6rem;
     }
-    /*
-    .mode-switch{
-    margin-right: 21rem;
-    }
-    /*
-    .mode-switch::before{
-    left: -19em;
-    }
-    */
 }
 @media only screen and (max-device-width: 1024px){
     .darkMode-wrapper{
     font-size: 1.5rem; 
     padding: 5rem;
     }
-    /*
-    .mode-switch{
-    margin-right: 12rem;
-    } */
-
-    /*
-    .mode-switch::before{
-    left: -11.5em;
-    }
-    */
-    
 }
 @media only screen and (min-device-width: 480px) and (max-device-width: 768px){
     .darkMode-wrapper{
     font-size: 1.4rem;
     }
-    /*
-    .mode-switch{
-    margin-right: 7rem;
-    }
-    */
 }
 @media only screen and (max-device-width: 425px){
     .darkMode-wrapper{
     font-size: 1rem;
     padding: 0%;
     }  
-    /*
-    .mode-switch{
-    margin-right: 4rem;
-    }
-    */
-    /*
-    .mode-switch::before{
-    left: -17em;
-    }
-    */
 }
 @media only screen and (max-device-width: 375px){
     .darkMode-wrapper{
@@ -237,16 +202,8 @@ i.fas fa-times{
 @media only screen and (min-device-width: 320px) and (max-device-width: 374px){
     .darkMode-wrapper{
     font-size: 0.75rem;
-     padding: 0%;
-     }  
+    }  
     .settings-container{
     max-width: 100%;
-    padding: 0;
     }
-
-    /*
-    .mode-switch::before{
-    left: -16.5em;
-    }
-    */
 }
