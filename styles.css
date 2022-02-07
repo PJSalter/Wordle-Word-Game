@@ -27,7 +27,6 @@ header{
     padding-left: 10%;
     gap: 10%;
 }
-
 /* title styling to the game */
 #wordle-Name{
    font-size: 2.25rem;
@@ -43,7 +42,6 @@ i, .tab {
     padding-right: 2rem;
     color: var(--primary-clr);
 }
-
 i.fas fa-cog{
     content: 'f013';
 }
@@ -62,9 +60,7 @@ i.fas fa-times{
     display: flex;
     flex-wrap: wrap;
 }
-
 /* creating styling for each and every square tile which will be held within the game board */
-
 .square{
      /* box */
      border: 0.125rem solid var(--primary-clr);
@@ -72,7 +68,6 @@ i.fas fa-times{
      height: 3.75rem;
      /* space gap between each square tile */
      margin: 0.156rem;
-
      /* text styling for each letter that will be typed by the user's choice */
      color: var(--text-clr);
      /* font size will be the same as the title */
@@ -81,9 +76,7 @@ i.fas fa-times{
      display: flex;
      justify-content: center;
      align-items: center;
-
 }
-
 #overlay {
     display: none;
     position: absolute;
@@ -115,8 +108,6 @@ i.fas fa-times{
     background: none;
     border: none;
     cursor: pointer;
-    /* margin-top: 1.25rem; */
-    /* padding-right: 2rem; */
     color: var(--primary-clr);
 }
 #setStyle{
@@ -129,18 +120,116 @@ i.fas fa-times{
     --background-clr: #000000;
     --primary-clr: lightgrey;
     --text-clr:#FFFFFF;
-  }
+}
   /* dark mode container styling */
-  .darkMode-wrapper{
+.darkMode-wrapper{
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
+    font-size: 0.875rem;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
+    position: relative;
     margin-bottom:1em;
+    padding: 1rem;
+}
+.mode-switch{
+    width:4em;
+    height:2em;
+    border-radius:10em;
+    background-color:var(--background-clr);
+    border: 2px solid var(--primary-clr);
+    position:absolute;
+    cursor: pointer;
+}
+.light-dark-toggle{
+    width:1.6em;
+    height:1.6em;
+    background-color: var(--primary-clr);
+    position:absolute;
+    border-radius: 10em;
+    top:0.2em;
+    left:0.2em;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+.mode-switch::before{
+    content:"Light Mode Activated";
+    position:absolute;
+    display:inline-block;
+    width:12em;
+    left: -15.5em;
+    top:0.4em;
+    text-align: left;
+}
+#dark-mode-switch:checked ~ label .light-dark-toggle{
+    transform: translateX(2em);
+}
+#dark-mode-switch:checked ~ .mode-switch::before{
+    content: 'Dark Mode On';
+}
+#dark-mode-switch{
+    display:none;
+}
+@media only screen and (max-device-width: 1440px){
+    .darkMode-wrapper{
+    font-size: 1.625rem;
+    padding: 6rem;
     }
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+    .mode-switch{
+    margin-right: 21rem;
+    }
+    .mode-switch::before{
+    left: -19em;
+    }
+}
+@media only screen and (max-device-width: 1024px){
+    .darkMode-wrapper{
+    font-size: 1.5rem; 
+    padding: 5rem;
+    }
+    .mode-switch{
+    margin-right: 12rem;
+    }
+    .mode-switch::before{
+    left: -18.5em;
+    }
+}
+@media only screen and (min-device-width: 480px) and (max-device-width: 768px){
+    .darkMode-wrapper{
+    font-size: 1.4rem;
+    }
+    .mode-switch{
+    margin-right: 7rem;
+    }
+}
+@media only screen and (max-device-width: 425px){
+    .darkMode-wrapper{
+    font-size: 1rem;
+    padding: 0%;
+    }  
+    .mode-switch{
+    margin-right: 4rem;
+    }
+    .mode-switch::before{
+    left: -17em;
+    }
+}
+@media only screen and (max-device-width: 375px){
+    .darkMode-wrapper{
+    font-size: 0.875rem;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 374px){
+    .darkMode-wrapper{
+    font-size: 0.75rem;
+     padding: 0%;
+     }  
     .settings-container{
-        max-width: 100%;
-        padding: 0;
+    max-width: 100%;
+    padding: 0;
+    }
+    .mode-switch::before{
+    left: -16.5em;
     }
 }
