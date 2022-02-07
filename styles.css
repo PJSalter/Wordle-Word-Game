@@ -27,7 +27,6 @@ header{
     padding-left: 10%;
     gap: 10%;
 }
-
 /* title styling to the game */
 #wordle-Name{
    font-size: 2.25rem;
@@ -43,7 +42,6 @@ i, .tab {
     padding-right: 2rem;
     color: var(--primary-clr);
 }
-
 i.fas fa-cog{
     content: 'f013';
 }
@@ -62,9 +60,7 @@ i.fas fa-times{
     display: flex;
     flex-wrap: wrap;
 }
-
 /* creating styling for each and every square tile which will be held within the game board */
-
 .square{
      /* box */
      border: 0.125rem solid var(--primary-clr);
@@ -72,7 +68,6 @@ i.fas fa-times{
      height: 3.75rem;
      /* space gap between each square tile */
      margin: 0.156rem;
-
      /* text styling for each letter that will be typed by the user's choice */
      color: var(--text-clr);
      /* font size will be the same as the title */
@@ -81,9 +76,7 @@ i.fas fa-times{
      display: flex;
      justify-content: center;
      align-items: center;
-
 }
-
 #overlay {
     display: none;
     position: absolute;
@@ -115,8 +108,6 @@ i.fas fa-times{
     background: none;
     border: none;
     cursor: pointer;
-    /* margin-top: 1.25rem; */
-    /* padding-right: 2rem; */
     color: var(--primary-clr);
 }
 #setStyle{
@@ -203,9 +194,7 @@ i.fas fa-times{
     .mode-switch::before{
     left: -18.5em;
     }
-
 }
-
 @media only screen and (min-device-width: 480px) and (max-device-width: 768px){
     .darkMode-wrapper{
     font-size: 1.4rem;
@@ -213,11 +202,6 @@ i.fas fa-times{
     .mode-switch{
     margin-right: 7rem;
     }
-    /*
-    .mode-switch::before{
-    left: -24.5em;
-    }
-    */
 }
 @media only screen and (max-device-width: 425px){
     .darkMode-wrapper{
