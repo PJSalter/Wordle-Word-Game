@@ -133,9 +133,14 @@ i.fas fa-times{
   /* dark mode container styling */
 .darkMode-wrapper{
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
+    font-size: 0.875rem;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
+    position: relative;
     margin-bottom:1em;
+    padding: 1rem;
 }
 .mode-switch{
     width:4em;
@@ -162,8 +167,9 @@ i.fas fa-times{
     position:absolute;
     display:inline-block;
     width:12em;
-    left: -8em;
+    left: -15.5em;
     top:0.4em;
+    text-align: left;
 }
 #dark-mode-switch:checked ~ label .light-dark-toggle{
     transform: translateX(2em);
@@ -174,10 +180,72 @@ i.fas fa-times{
 #dark-mode-switch{
     display:none;
 }
+@media only screen and (max-device-width: 1440px){
+    .darkMode-wrapper{
+    font-size: 1.625rem;
+    padding: 6rem;
+    }
+    .mode-switch{
+    margin-right: 21rem;
+    }
+    .mode-switch::before{
+    left: -19em;
+    }
+}
+@media only screen and (max-device-width: 1024px){
+    .darkMode-wrapper{
+    font-size: 1.5rem; 
+    padding: 5rem;
+    }
+    .mode-switch{
+    margin-right: 12rem;
+    }
+    .mode-switch::before{
+    left: -18.5em;
+    }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 768px){
+    .darkMode-wrapper{
+    font-size: 1.4rem;
+    }
+    .mode-switch{
+    margin-right: 7rem;
+    }
+    /*
+    .mode-switch::before{
+    left: -24.5em;
+    }
+    */
+}
+@media only screen and (max-device-width: 425px){
+    .darkMode-wrapper{
+    font-size: 1rem;
+    padding: 0%;
+    }  
+    .mode-switch{
+    margin-right: 4rem;
+    }
+    .mode-switch::before{
+    left: -17em;
+    }
+}
+@media only screen and (max-device-width: 375px){
+    .darkMode-wrapper{
+    font-size: 0.875rem;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 374px){
+    .darkMode-wrapper{
+    font-size: 0.75rem;
+     padding: 0%;
+     }  
     .settings-container{
-        max-width: 100%;
-        padding: 0;
+    max-width: 100%;
+    padding: 0;
+    }
+    .mode-switch::before{
+    left: -16.5em;
     }
 }
